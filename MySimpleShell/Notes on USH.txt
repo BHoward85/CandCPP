@@ -1,0 +1,32 @@
+Use Lab6 for the command prompt
+
+have a Sturct for Alias, a char * for the alias and a char ** for the tokenized actual command
+
+Ie
+ll = "ls -l"
+
+sturct Alias
+{
+	char * alias = "ll";
+	char ** tokCom -> ["ls", "-l", "\0"];
+	int tokc - > 2;
+}
+
+have a Sturct for History, a char * for the command and a char ** for the tokenized command
+
+sturct HistCom
+{
+	char * command = "ls -l"
+	char ** tokCom -> ["ls", "-l", "\0"];
+	int tokc -> 2;
+}
+
+int chdir(const char *filename) is used for cd
+0 for a successful run
+-1 is error
+errno
+EACCES - Read permission is denied for the directory named by dirname.
+EBADF - The filedes argument is not a valid file descriptor. 
+ENOTDIR - The file descriptor filedes is not associated with a directory.
+EINTR - The function call was interrupt by a signal. 
+EIO - An I/O error occurred. 

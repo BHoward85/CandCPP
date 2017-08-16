@@ -1,0 +1,7 @@
+HISTCOUNT=100
+HISTFILECOUNT=1000
+
+alias ll='ls -l'
+alias lr='ls -lR'
+alias ww='wc -w'
+
